@@ -1,4 +1,4 @@
-package edu.uiuc.threadlocalrefactoring.tests;
+package edu.uiuc.threadprivaterefactoring.tests;
 
 import junit.framework.Test;
 
@@ -6,7 +6,7 @@ import org.eclipse.jdt.core.IPackageFragment;
 import org.eclipse.jdt.core.IPackageFragmentRoot;
 import org.eclipse.jdt.ui.tests.refactoring.infra.RefactoringTestSetup;
 
-public class ThreadLocalRefactoringTestSetup extends RefactoringTestSetup {
+public class ThreadPrivateRefactoringTestSetup extends RefactoringTestSetup {
 	
 	private IPackageFragment fBaseTypes;
 	private IPackageFragment fObjectTypes;
@@ -15,7 +15,7 @@ public class ThreadLocalRefactoringTestSetup extends RefactoringTestSetup {
 	private IPackageFragment fStaticRef;
 	private IPackageFragment fExistingMethod;
 	
-	public ThreadLocalRefactoringTestSetup(Test test) {
+	public ThreadPrivateRefactoringTestSetup(Test test) {
 		super(test);
 	}	
 	

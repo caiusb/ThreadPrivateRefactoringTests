@@ -1,4 +1,4 @@
-package edu.uiuc.threadlocalrefactoring.tests;
+package edu.uiuc.threadprivaterefactoring.tests;
 
 import junit.framework.Test;
 import junit.framework.TestSuite;
@@ -16,22 +16,22 @@ import org.eclipse.jdt.internal.corext.refactoring.Checks;
 import org.eclipse.jdt.ui.tests.refactoring.infra.AbstractSelectionTestCase;
 import org.eclipse.ltk.core.refactoring.RefactoringStatus;
 
-public class ThreadLocalRefactoringTests extends AbstractSelectionTestCase {
+public class ThreadPrivateRefactoringTests extends AbstractSelectionTestCase {
 
-	private static ThreadLocalRefactoringTestSetup fgTestSetup;
+	private static ThreadPrivateRefactoringTestSetup fgTestSetup;
 
-	public ThreadLocalRefactoringTests(String name) {
+	public ThreadPrivateRefactoringTests(String name) {
 		super(name);
 	}
 
 	public static Test suite() {
-		fgTestSetup = new ThreadLocalRefactoringTestSetup(new TestSuite(
-				ThreadLocalRefactoringTests.class));
+		fgTestSetup = new ThreadPrivateRefactoringTestSetup(new TestSuite(
+				ThreadPrivateRefactoringTests.class));
 		return fgTestSetup;
 	}
 
 	public static Test setUpTest(Test test) {
-		fgTestSetup = new ThreadLocalRefactoringTestSetup(test);
+		fgTestSetup = new ThreadPrivateRefactoringTestSetup(test);
 		return fgTestSetup;
 	}
 

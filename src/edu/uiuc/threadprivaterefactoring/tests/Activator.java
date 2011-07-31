@@ -1,4 +1,4 @@
-package edu.uiuc.threadlocalrefactoring.tests;
+package edu.uiuc.threadprivaterefactoring.tests;
 
 import java.io.File;
 import java.io.IOException;

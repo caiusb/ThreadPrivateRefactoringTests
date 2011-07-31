@@ -23,7 +23,7 @@ import java.util.Set;
 
 import junit.framework.TestCase;
 
-import edu.uiuc.threadlocalrefactoring.tests.Activator;
+import edu.uiuc.threadprivaterefactoring.tests.Activator;
 
 import org.eclipse.core.runtime.CoreException;
 import org.eclipse.core.runtime.NullProgressMonitor;
