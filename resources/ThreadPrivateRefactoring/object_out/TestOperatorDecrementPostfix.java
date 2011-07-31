@@ -7,6 +7,6 @@ public class TestOperatorDecrementPostfix {
 
 	private void m() {
 		int count = f.get();
-		f.set(f.get()-1);
+		f.set(f.get() - 1);
 	}
 }

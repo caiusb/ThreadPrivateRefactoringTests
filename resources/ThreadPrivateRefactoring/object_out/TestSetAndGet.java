@@ -3,7 +3,7 @@ package object_out;
 import privatization.ThreadPrivate;
 
 public class TestSetAndGet {
-  ThreadPrivate<Integer> f = new ThreadPrivate<Integer>() {
+	ThreadPrivate<Integer> f = new ThreadPrivate<Integer>() {
 		protected Integer initialValue() {
 			return 0;
 		}

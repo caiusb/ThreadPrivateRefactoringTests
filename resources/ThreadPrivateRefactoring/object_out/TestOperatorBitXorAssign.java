@@ -1,6 +1,6 @@
 package object_out;
 
-private privatization.ThreadPrivate;
+import privatization.ThreadPrivate;
 
 public class TestOperatorBitXorAssign {
 	public ThreadPrivate<Integer> f = new ThreadPrivate<Integer>();

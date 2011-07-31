@@ -3,7 +3,7 @@ package object_out;
 import privatization.ThreadPrivate;
 
 public class TestOperatorMultiplyAssign {
-	public ThreadLocal<Integer> f = new ThreadLocal<Integer>();
+	public ThreadPrivate<Integer> f = new ThreadPrivate<Integer>();
 
 	private void m() {
 		int count = 42;
