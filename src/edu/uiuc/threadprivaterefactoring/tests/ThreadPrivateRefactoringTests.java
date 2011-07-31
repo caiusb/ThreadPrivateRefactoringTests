@@ -3,7 +3,7 @@ package edu.uiuc.threadprivaterefactoring.tests;
 import junit.framework.Test;
 import junit.framework.TestSuite;
 
-import edu.uiuc.threadlocalrefactoring.ThreadLocalRefactoring;
+import edu.uiuc.threadprivaterefactoring.ThreadPrivateRefactoring;
 
 import org.eclipse.core.runtime.NullProgressMonitor;
 import org.eclipse.core.runtime.Preferences;
@@ -41,7 +41,7 @@ public class ThreadPrivateRefactoringTests extends AbstractSelectionTestCase {
 	}
 
 	protected String getResourceLocation() {
-		return "ThreadLocalRefactoring/";
+		return "ThreadPrivateRefactoring/";
 	}
 
 	protected String adaptName(String name) {
@@ -57,7 +57,7 @@ public class ThreadPrivateRefactoringTests extends AbstractSelectionTestCase {
 
 		initializePreferences();
 
-		ThreadLocalRefactoring refactoring = new ThreadLocalRefactoring(field);
+		ThreadPrivateRefactoring refactoring = new ThreadPrivateRefactoring(field);
 		performTest(unit, refactoring, COMPARE_WITH_OUTPUT,
 				getProofedContent(outputFolder, id), true);
 	}
@@ -70,7 +70,7 @@ public class ThreadPrivateRefactoringTests extends AbstractSelectionTestCase {
 
 		initializePreferences();
 
-		ThreadLocalRefactoring refactoring = new ThreadLocalRefactoring(field);
+		ThreadPrivateRefactoring refactoring = new ThreadPrivateRefactoring(field);
 		if (refactoring != null) {
 			RefactoringStatus status = refactoring
 					.checkAllConditions(new NullProgressMonitor());

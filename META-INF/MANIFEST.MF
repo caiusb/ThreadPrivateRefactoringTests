@@ -1,7 +1,7 @@
 Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
-Bundle-Name: ThreadLocalRefactoringTests
-Bundle-SymbolicName: ThreadLocalRefactoringTests
+Bundle-Name: ThreadPrivateRefactoringTests
+Bundle-SymbolicName: ThreadPrivateRefactoringTests
 Bundle-Version: 1.0.0.qualifier
 Bundle-Activator: edu.uiuc.threadprivaterefactoring.tests.Activator
 Require-Bundle: org.eclipse.ui,
@@ -10,11 +10,11 @@ Require-Bundle: org.eclipse.ui,
  org.eclipse.core.runtime,
  org.junit,
  org.eclipse.jdt.core,
- ThreadLocalRefactoring,
  org.eclipse.jdt.ui,
  org.eclipse.ltk.core.refactoring,
  org.eclipse.jface.text,
- org.eclipse.core.resources
+ org.eclipse.core.resources,
+ ThreadPrivateRefactoring;bundle-version="1.0.0"
 Bundle-ActivationPolicy: lazy
 Bundle-RequiredExecutionEnvironment: JavaSE-1.6
 Import-Package: junit.extensions;version="4.8.2",
