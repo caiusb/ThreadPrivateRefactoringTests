@@ -212,4 +212,8 @@ public class ThreadPrivateRefactoringTests extends AbstractSelectionTestCase {
 		objectTest("f");
 	}
 	
+	public void testSimpleRefactoring() throws Exception {
+		objectTest("shared");
+	}
+	
 }
