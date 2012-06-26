@@ -1,9 +1,9 @@
-package dummies;
+package object_in;
 
-import extra166y.Ops;
+import extra166y.Ops.Procedure;
 import extra166y.ParallelArray;
 
-public class testSimpleRefactoring {
+public class TestSimpleRefactoring {
 	
 	private Particle shared = new Particle();
 	
@@ -24,7 +24,7 @@ public class testSimpleRefactoring {
 						ParallelArray.defaultExecutor());
 
 
-		particles.apply(new Ops.Procedure<Particle>() {
+		particles.apply(new Procedure<Particle>() {
 			@Override
 			public void op(Particle b) {
 				shared.coordX = 10.;

@@ -1,10 +1,10 @@
 package object_in;
 
-import extra166y.Ops;
+import extra166y.Ops.Procedure;
 import extra166y.ParallelArray;
 import privatization.ThreadPrivate;
 
-public class testSimpleRefactoring {
+public class TestSimpleRefactoring {
 	
 	private ThreadPrivate<Particle> shared = new ThreadPrivate<Particle>() {
 		protected Particle initialValue() {
@@ -29,7 +29,7 @@ public class testSimpleRefactoring {
 						ParallelArray.defaultExecutor());
 
 
-		particles.apply(new Ops.Procedure<Particle>() {
+		particles.apply(new Procedure<Particle>() {
 			@Override
 			public void op(Particle b) {
 				shared.get().coordX = 10.;
