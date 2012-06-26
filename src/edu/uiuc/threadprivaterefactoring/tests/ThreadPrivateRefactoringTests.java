@@ -216,4 +216,7 @@ public class ThreadPrivateRefactoringTests extends AbstractSelectionTestCase {
 		objectTest("shared");
 	}
 	
+	public void testAccessInAnonymous() throws Exception {
+		objectTest("f");
+	}
 }
